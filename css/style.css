@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700');
+/* RESETTING */
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 8px;
+    background-color: #333;
+    color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+h2 {
+    padding: 1.5rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+    word-spacing: 0.5rem;
+    text-align: center;
+}
+p {
+    padding: 1.5rem;
+    word-spacing: 0.5rem;
+    line-height: 2rem;
+    font-size: 1.125rem;
+    font-weight: 300;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+/* HEADER PANEL */
+header {
+    margin-top: 10vh;   /**/
+    width: 100vw;
+    height: 60vh;       /**/
+    display: flex;
+    align-items: center;
+    /*~~~*/
+    background-color: rebeccapurple;
+}
+#header { margin: 0 auto; }
+h1 {
+    font-size: 4rem;    /**/
+    font-weight: 700;   /**/
+    margin: 0 auto;
+    text-align: center;
+}
+h3 {
+    margin-top: 1rem;   /**/
+    font-size: 1.5rem;  /**/
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+}
+
+/* DESCRIPTION PANEL */
+#bio {
+    margin-top: 30vh;   /**/
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: stretch;    
+    /*~~~*/
+    background-color: rebeccapurple;
+}
+#bio>div { align-self: flex-end; width: 100vw; };
+#putaindebiopic {
+    float: left;
+    padding: 1rem 1rem 0 1rem;  /**/
+}
+
+/* SKILLS PANEL */
+#skills {
+    position: relative;
+    margin-top: 20vh;
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    /*~~~*/
+    background-color: rebeccapurple;
+}
+.skillsInput {
+    height: 8rem;
+    width: 8rem;
+    opacity: 0;
+    z-index: 2;
+    margin: 0;
+}
+#skillsPicDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.skillsPic {
+    border: 1px solid rebeccapurple;
+    border-radius: 50%;
+}
+.skillsDemo {
+    position: absolute;
+    top: 9.5rem;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: blanchedalmond;
+}
+.skillsDemo>div {
+    width: 100%;
+    height: 512px;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+.skillsDemoText {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* à modifier pour avoir un effet de transition bien sympa */
+.skillsDemo { opacity: 0; transition: opacity 0.25s; }
+#skillsInput1:checked ~ #skillsDemo1 {
+    animation-name: skillsDemo;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+#skillsInput2:checked ~ #skillsDemo2 {
+    animation-name: skillsDemo;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+#skillsInput3:checked ~ #skillsDemo3 {
+    animation-name: skillsDemo;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+#skillsInput4:checked ~ #skillsDemo4 {
+    animation-name: skillsDemo;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+#skillsInput5:checked ~ #skillsDemo5 {
+    animation-name: skillsDemo;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+@keyframes skillsDemo { from{ opacity: 0;} to{opacity: 1;} }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#slide1 {
+    background: url(https://loremflickr.com/g/1300/900/paris) center 0 no-repeat fixed;
+    height: 900px;
+ }
+ 
+ #slide2 {
+    background: url(https://loremflickr.com/g/1300/900/mountains) center 0 no-repeat fixed;
+    height: 900px;
+ }
+ 
+ #slide3 {
+    background: url(https://loremflickr.com/g/1300/900/sunset) center 0 no-repeat fixed;
+    height: 900px;
+ }
+
+ .slide_inside {
+    width: 800px;
+    margin: 0 auto;
+}
