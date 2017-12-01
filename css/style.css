@@ -27,16 +27,23 @@ p {
     vertical-align: bottom;
     text-align: left;
 }
+a { text-decoration: none; color: #FAFAFA;}
+.parallaxEffect {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* HEADER PANEL */
 header {
     margin-top: 10vh;   /**/
     width: 100vw;
-    height: 60vh;       /**/
+    height: 70vh;       /**/
     display: flex;
     align-items: center;
-    /*~~~*/
-    background-color: rebeccapurple;
+    background-image: url("../img/pic1.jpg");
 }
 #header { margin: 0 auto; }
 h1 {
@@ -55,15 +62,15 @@ h3 {
 
 /* DESCRIPTION PANEL */
 #bio {
-    margin-top: 30vh;   /**/
+    margin-top: 25vh;   /**/
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: stretch;    
+    justify-content: stretch;
     /*~~~*/
-    background-color: rebeccapurple;
+    background-image: url("../img/pic2.jpg");
 }
 #bio>div { align-self: flex-end; width: 100vw; };
 #putaindebiopic {
@@ -76,24 +83,24 @@ h3 {
     position: relative;
     margin-top: 20vh;
     width: 100vw;
-    height: 10rem;
+    height: calc(768px + 1.5rem);
+    /* height: calc(5rem + 512px); */
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-evenly;
-    /*~~~*/
-    background-color: rebeccapurple;
 }
 .skillsInput {
-    height: 8rem;
-    width: 8rem;
+    margin-top: 0.5rem;
+    height: 6rem;
+    width: 6rem;
     opacity: 0;
     z-index: 2;
     margin: 0;
 }
 #skillsPicDiv {
     position: absolute;
-    top: 0;
+    top: 0.5rem;
     left: 0;
     width: 100%;
     display: flex;
@@ -101,17 +108,11 @@ h3 {
     align-content: center;
     justify-content: space-evenly;
 }
-.skillsPic {
-    border: 1px solid rebeccapurple;
-    border-radius: 50%;
-}
 .skillsDemo {
     position: absolute;
-    top: 9.5rem;
+    top: calc(96px + 1.5rem);
     left: 0;
     width: 100%;
-    height: 5rem;
-    background-color: blanchedalmond;
 }
 .skillsDemo>div {
     width: 100%;
@@ -157,12 +158,59 @@ h3 {
 }
 @keyframes skillsDemo { from{ opacity: 0;} to{opacity: 1;} }
 
+/* ENDORSEMENT PANEL */
+#like {
+    background-color: #FFFEF5;
+    color: #424242;    
+    width: 100vw;
+    padding-top: 20vh;
+    padding-bottom: 30vh;
+}
+.likePanel {
+    padding-top: 0.5rem;
+    background: repeating-linear-gradient(135deg,
+    #FFFEF5,
+    #FFFEF5 2px,
+    rgba(42, 42, 42, 0.05) 2px,
+    rgba(42, 42, 42, 0.05) 4px);
+    margin: 0.5rem 0.5rem 0 0.5rem;;
+    width: calc(100% - 1rem);
+}
+#like, .likePanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.likePanelPic {
+    border-radius: 50%;
+}
+.likePanel>p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
 
+/* SOCIAL NETWORK PANEL */
+#social {
+    width: 100vw;
+    background-image: url("../img/pic3.jpg");
+}
+#social>div {
+    margin-top: 10rem;
+    padding-bottom: 30vh;
+    width: 100%;
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-
-
-
-
+#blank {
+    width: 100vw;
+    height: 20vh;
+}
 
 
 
@@ -201,17 +249,17 @@ h3 {
 
 
 #slide1 {
-    background: url(https://loremflickr.com/g/1300/900/paris) center 0 no-repeat fixed;
+    background: "../img/pic1.jpg" center 0 no-repeat fixed;
     height: 900px;
  }
- 
+
  #slide2 {
-    background: url(https://loremflickr.com/g/1300/900/mountains) center 0 no-repeat fixed;
+    background: "../img/pic2.jpg" center 0 no-repeat fixed;
     height: 900px;
  }
- 
+
  #slide3 {
-    background: url(https://loremflickr.com/g/1300/900/sunset) center 0 no-repeat fixed;
+    background: "../img/pic3.jpg" center 0 no-repeat fixed;
     height: 900px;
  }
 
